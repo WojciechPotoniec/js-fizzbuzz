@@ -9,3 +9,15 @@
 #FizzBuzz{
     background-color: yellow;
 }
+.box{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid black;
+}
+#boxes{
+    width: 1200px;
+    margin: 0 auto;
+}
