@@ -64,5 +64,5 @@ for (let i = 1; i <= numBoxes; i++) {
 }
 
 squareWrapper.innerHTML = tmplate;
-const container = document.querySelector('.container');
+const container = document.querySelector('.container-fluid');
 container.append(squareWrapper);

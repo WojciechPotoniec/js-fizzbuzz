@@ -9,17 +9,27 @@
 #FizzBuzz {
     background-color: yellow;
 }
-
+body{
+    background-color: rgb(66, 145, 59);
+}
+h1{
+    filter: drop-shadow(15px 10px 15px #2e0404);
+    tra
+}
 .box {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
     border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px #00C667;
+    
 }
 
 #boxes {
-    width: 1000px;
+    width: 80%;
     margin: 20px auto;
 }
