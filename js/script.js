@@ -18,9 +18,23 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 */
 
-// creo elemento div all'interno del documento html e lo associo a una costante
+/*
+tmplate: 
+    <div id="boxes" class="d-flex justify-content-center align-content-center gap-3">
+        <div class="box"></div>
+    </div>
+*/
+
+
+// creo elemento div all'interno del documento html e lo associo a una costante.
 const squareWrapper = document.createElement('div');
-console.log(typeof squareWrapper);
+
+// associo a squarewrapper le seguenti classi scritte nelle ''.
+squareWrapper.className = 'd-flex justify-content-center align-content-center gap-3';
+
+// associo un attributo preso per id a squarewrapper.
+squareWrapper.setAttribute('id', 'boxes');
+
 
 // creo ed associo le variabili agli id creati su html
 let elfizz = document.getElementById('Fizz');
