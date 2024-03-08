@@ -30,12 +30,10 @@ tmplate:
 const squareWrapper = document.createElement('div');
 
 // associo a squarewrapper le seguenti classi scritte nelle ''.
-squareWrapper.className = 'd-flex justify-content-center align-content-center gap-3';
+squareWrapper.className = 'd-flex justify-content-center align-content-center flex-wrap gap-3';
 
 // associo un attributo preso per id a squarewrapper.
 squareWrapper.setAttribute('id', 'boxes');
-
-let numBoxes = 100;
 
 // creo ed associo le variabili agli id creati su html
 let elfizz = document.getElementById('Fizz');
@@ -43,20 +41,28 @@ let elbuzz = document.getElementById('Buzz');
 let elfizzbuzz = document.getElementById('FizzBuzz');
 console.log(typeof elfizz, typeof elbuzz, typeof elfizzbuzz);
 
-for (let i = 1; i <= 100; i++) {
-    if (i % 15 == 0) {
+let numBoxes = 100;
+let tmplate = '';
 
+for (let i = 1; i <= numBoxes; i++) {
+    if (i % 15 === 0) {
+        tmplate += `<div id="FizzBuzz" class="box">FizzBuzz</div>`
         console.log("FizzBuzz");
     }
-    else if (i % 3 == 0) {
-
+    else if (i % 3 === 0) {
+        tmplate += `<div id="Fizz" class="box">Fizz</div>`
         console.log("Fizz");
     }
-    else if (i % 5 == 0) {
-
+    else if (i % 5 === 0) {
+        tmplate += `<div id="Buzz" class="box">Buzz</div>`
         console.log("Buzz");
     }
-    else console.log(i);
+    else {
+        tmplate += `<div class="box">${i}</div>`
+        console.log(i);
+    }
 }
 
-
+squareWrapper.innerHTML = tmplate;
+const container = document.querySelector('.container');
+container.append(squareWrapper);

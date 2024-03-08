@@ -15,11 +15,11 @@
     height: 80px;
     display: flex;
     justify-content: center;
-    align-content: center;
-    border: 2px solid black;
+    align-items: center;
+    border: 1px solid black;
 }
 
 #boxes {
-    width: 1200px;
-    margin: 0 auto;
+    width: 1000px;
+    margin: 20px auto;
 }
