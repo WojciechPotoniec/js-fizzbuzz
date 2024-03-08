@@ -35,6 +35,7 @@ squareWrapper.className = 'd-flex justify-content-center align-content-center ga
 // associo un attributo preso per id a squarewrapper.
 squareWrapper.setAttribute('id', 'boxes');
 
+let numBoxes = 100;
 
 // creo ed associo le variabili agli id creati su html
 let elfizz = document.getElementById('Fizz');
@@ -42,7 +43,17 @@ let elbuzz = document.getElementById('Buzz');
 let elfizzbuzz = document.getElementById('FizzBuzz');
 console.log(typeof elfizz, typeof elbuzz, typeof elfizzbuzz);
 
+for (let i = 1; i <= 100; i++) {
+    if (i % 15 == 0) {
 
+    } console.log("FizzBuzz");
+    else if (i % 3 == 0) {
 
+    } console.log("Fizz");
+    else if (i % 5 == 0) {
+
+    } console.log("Buzz");
+    else console.log(i);
+}
 
 

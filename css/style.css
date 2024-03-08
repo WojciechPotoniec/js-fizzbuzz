@@ -1,15 +1,16 @@
-#Fizz{
+#Fizz {
     background-color: green;
 }
 
-#Buzz{
+#Buzz {
     background-color: red;
 }
 
-#FizzBuzz{
+#FizzBuzz {
     background-color: yellow;
 }
-.box{
+
+.box {
     width: 80px;
     height: 80px;
     display: flex;
@@ -17,7 +18,8 @@
     align-content: center;
     border: 2px solid black;
 }
-#boxes{
+
+#boxes {
     width: 1200px;
     margin: 0 auto;
 }
